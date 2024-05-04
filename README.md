@@ -22,9 +22,9 @@ The project consists of two main components:
    BookDetails Page:This page displays detailed information about a specific book. Information such as the book's title, ISBN, page count, and authors are displayed. Users can access this page by clicking on a book title from the GetBooks page.
 
 
-![Project Screenshot](HiraAcademy\maaz_frontend\src\assets\bookdetails.png)
+![Project Screenshot](maaz_frontend/src/assetsbookdetails.png)
 
-![Project Screenshot](HiraAcademy\maaz_frontend\src\assets\getbook.png)
+![Project Screenshot](maaz_frontend/src/assetsgetbook.png)
 
 
 ## Technologies Used
