@@ -29,22 +29,22 @@ const GetBooks = () => {
       <Flex
         direction="column"
         alignItems="center"
-        marginTop="50px"
-        height="100vh"
+        marginTop="5vh"
+        min-height="100vh"
         width="100vw"
       >
         <h1 style={{ fontFamily: 'italic', color: 'black', fontSize: "3rem", fontWeight: "bold" }}>
-  HiraAcademy
-</h1>
-<Text style={{ fontFamily: 'italic', color: 'black', fontSize: "1.5rem", fontWeight: "bold" }}>
-  Name: Maaz Saboowala
-</Text>
-<Text style={{ fontFamily: 'italic', color: 'black', fontSize: "1.5rem", fontWeight: "bold" }}>
-  College: Dwarkadas J Sanghvi College of Engineering
-</Text>
-<Text style={{ fontFamily: 'italic', color: 'black', fontSize: "1.5rem", fontWeight: "bold" }}>
-  SY Btech in CSE(DS)
-</Text>
+          HiraAcademy
+        </h1>
+        <Text style={{ fontFamily: 'italic', color: 'black', fontSize: "1.5rem", fontWeight: "bold" }}>
+          Name: Maaz Saboowala
+        </Text>
+        <Text style={{ fontFamily: 'italic', color: 'black', fontSize: "1.5rem", fontWeight: "bold" }}>
+          College: Dwarkadas J Sanghvi College of Engineering
+        </Text>
+        <Text style={{ fontFamily: 'italic', color: 'black', fontSize: "1.5rem", fontWeight: "bold" }}>
+          SY Btech in CSE(DS)
+        </Text>
 
         {loading ? (
           <Spinner size="xl" color="white" thickness="4px" />
@@ -74,12 +74,30 @@ const GetBooks = () => {
                 padding="20px"
                 overflow="hidden"
                 border="2px solid white"
+                transition="all 0.3s"
+                _hover={{
+                  transform: 'scale(1.05)',
+                  boxShadow: '0px 0px 20px 10px rgba(0,0,0,0.5)',
+                  cursor: 'pointer',
+                  background: "linear-gradient(to right,grey, #00215E)",
+                }}
               >
+
+
                 <FaBook size={24} style={{ marginBottom: '10px', color: "black" }} />
                 <Link
                   to={`/${book.id}`}
-                  style={{ textDecoration: 'none', color: 'white', textAlign: 'center' }}
+                  style={{
+                    textDecoration: 'none',
+                    color: 'white',
+                    textAlign: 'center',
+                    _hover: {
+                      color: 'black' 
+                    }
+                  }}
                 >
+
+
                   <Text fontSize="md" fontWeight="bold" textAlign="center" overflow="hidden" textOverflow="ellipsis" whiteSpace="nowrap">
                     {book.title}
                   </Text>
